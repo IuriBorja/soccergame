@@ -9,7 +9,7 @@ public class Game {
     public void start()
     {
         goalKeeper = new GoalKeeper();
-        handler = new Handler();
+        handler = new Handler(player);
         player = new Player(goalKeeper);
 
     }
