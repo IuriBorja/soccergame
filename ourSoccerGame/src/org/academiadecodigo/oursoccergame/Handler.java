@@ -23,22 +23,22 @@ public class Handler implements KeyboardHandler {
 
         KeyboardEvent keyboardEventRight = new KeyboardEvent();
         keyboardEventRight.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboardEventRight.setKey(keyboardEventRight.KEY_RIGHT);
+        keyboardEventRight.setKey(KeyboardEvent.KEY_RIGHT);
         keyboard.addEventListener(keyboardEventRight);
 
         KeyboardEvent keyboardEventLeft = new KeyboardEvent();
         keyboardEventLeft.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboardEventLeft.setKey(keyboardEventLeft.KEY_LEFT);
+        keyboardEventLeft.setKey(KeyboardEvent.KEY_LEFT);
         keyboard.addEventListener(keyboardEventLeft);
 
         KeyboardEvent keyboardEventMiddle = new KeyboardEvent();
         keyboardEventMiddle.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboardEventMiddle.setKey((keyboardEventMiddle.KEY_DOWN));
+        keyboardEventMiddle.setKey((KeyboardEvent.KEY_DOWN));
         keyboard.addEventListener((keyboardEventMiddle));
 
         KeyboardEvent keyboardEventP = new KeyboardEvent();
         keyboardEventP.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        keyboardEventP.setKey(keyboardEventP.KEY_P);
+        keyboardEventP.setKey(KeyboardEvent.KEY_P);
         keyboard.addEventListener(keyboardEventP);
     }
 
@@ -48,19 +48,33 @@ public class Handler implements KeyboardHandler {
         switch(keyboardEvent.getKey())
         {
             case KeyboardEvent.KEY_RIGHT:
-                player.kick(Directions.RIGHT);
+                try {
+                        player.kick(Directions.RIGHT);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
 
             case KeyboardEvent.KEY_LEFT:
-                player.kick(Directions.LEFT);
+                try {
+                    player.kick(Directions.LEFT);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
 
             case KeyboardEvent.KEY_DOWN:
-                player.kick(Directions.DOWN);
+                try {
+                    player.kick(Directions.CENTER);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
 
             case KeyboardEvent.KEY_P:
                 System.exit(1);
+                break;
+            default:
                 break;
 
         }
