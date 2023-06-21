@@ -48,27 +48,18 @@ public class Handler implements KeyboardHandler {
         switch(keyboardEvent.getKey())
         {
             case KeyboardEvent.KEY_RIGHT:
-                try {
-                        player.kick(Directions.RIGHT);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+
+                player.kick(Directions.RIGHT);
                 break;
 
             case KeyboardEvent.KEY_LEFT:
-                try {
-                    player.kick(Directions.LEFT);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+
+                player.kick(Directions.LEFT);
                 break;
 
             case KeyboardEvent.KEY_DOWN:
-                try {
-                    player.kick(Directions.CENTER);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+
+                player.kick(Directions.CENTER);
                 break;
 
             case KeyboardEvent.KEY_P:

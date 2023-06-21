@@ -10,7 +10,7 @@ public class Player {
         this.goalKeeper = goalKeeper;
     }
 
-    public void kick(Directions playerDirection) throws InterruptedException {
+    public void kick(Directions playerDirection) {
 
 
         //if the delay has reached or if is the first time
