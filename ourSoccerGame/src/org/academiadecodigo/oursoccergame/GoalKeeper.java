@@ -8,32 +8,32 @@ public class GoalKeeper {
 
     public GoalKeeper() {
 
-        noSaveCenter = new Picture(250, 200, "ourSoccerGame/resources/KeeperDefaultPos.png");
+        noSaveCenter = new Picture(250, 200, "oursoccergame/ourSoccerGame/resources/KeeperDefaultPos.png");
         noSaveCenter.draw();
     }
     //Create saveLeft:
-    Picture keeperSaveLeft = new Picture(50, 100, "ourSoccerGame/resources/KeeperSaveLeft.png");
+    Picture keeperSaveLeft = new Picture(50, 100, "oursoccergame/ourSoccerGame/resources/KeeperSaveLeft.png");
 
     //Create saveRight:
-    Picture keeperSaveRight = new Picture(430, 100, "ourSoccerGame/resources/KeeperSaveRight.png");
+    Picture keeperSaveRight = new Picture(430, 100, "oursoccergame/ourSoccerGame/resources/KeeperSaveRight.png");
 
     //Create saveCenter:
-    Picture keeperSaveCenter = new Picture(250, 100, "ourSoccerGame/resources/KeeperSaveCenter.png");
+    Picture keeperSaveCenter = new Picture(250, 100, "oursoccergame/ourSoccerGame/resources/KeeperSaveCenter.png");
 
     //Create noSaveLeft:
-    Picture noSaveLeft = new Picture(50, 100, "ourSoccerGame/resources/NoSaveLeft1.png");
+    Picture noSaveLeft = new Picture(50, 100, "oursoccergame/ourSoccerGame/resources/NoSaveLeft1.png");
 
     //Create noSaveRight:
-    Picture noSaveRight = new Picture(430, 100, "ourSoccerGame/resources/NoSaveRight1.png");
+    Picture noSaveRight = new Picture(430, 100, "oursoccergame/ourSoccerGame/resources/NoSaveRight1.png");
 
     //Create ball center:
-    Picture goalCenter = new Picture(250, 200, "ourSoccerGame/resources/Ball.png");
+    Picture goalCenter = new Picture(250, 200, "oursoccergame/ourSoccerGame/resources/Ball.png");
 
     //Create ball right:
-    Picture goalRight = new Picture(580, 100, "ourSoccerGame/resources/Ball.png");
+    Picture goalRight = new Picture(580, 100, "oursoccergame/ourSoccerGame/resources/Ball.png");
 
     //Create ball left:
-    Picture goalLeft = new Picture(-100, 100, "ourSoccerGame/resources/Ball.png");
+    Picture goalLeft = new Picture(-100, 100, "oursoccergame/ourSoccerGame/resources/Ball.png");
 
 
     public void chooseSideGoalkeeper(Directions playerDirection) {

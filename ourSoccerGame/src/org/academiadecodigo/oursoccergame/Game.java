@@ -12,7 +12,7 @@ public class Game {
 
     public void start()
     {
-        Picture backGround = new Picture(10, 10, "ourSoccerGame/resources/background.png");
+        Picture backGround = new Picture(10, 10, "oursoccergame/ourSoccerGame/resources/background.png");
         backGround.draw();
 
         Text text = new Text(130, 50, "SCORE: ");
